@@ -1,6 +1,5 @@
--- Vector Zed Script by Fbr
+-- Vector Zed Script by Fbr --
 local RREADY, QREADY, WREADY, EREADY
-local 
 local prediction
 local Menu = Libs.NewMenu
 local Orbwalker = Libs.Orbwalker
@@ -94,7 +93,7 @@ local Spells = {
         Slot = Enums.SpellSlots.R,
         SlotString = "R",
         Range = 625,
-        Delay = 0.6
+        Delay = 0.6,
 		Type = "Targeted"
     }
 }
@@ -316,7 +315,7 @@ function Zed.Harass()
         end
 end
  
-function Zed.AutoE()
+function Zed.AutoE(target)
         local box = 280
 		local target = Target
 		if not Menu.Get("Misc.AutoE") then return 
